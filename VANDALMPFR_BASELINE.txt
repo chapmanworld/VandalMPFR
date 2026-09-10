@@ -1,0 +1,17 @@
+VandalMPFR upstream baseline
+
+MPFR (GNU Multiple Precision Floating-Point Reliable Library):
+  Version: 4.2.2
+  Upstream repository: https://gitlab.inria.fr/mpfr/mpfr.git
+  Upstream tag: 4.2.2
+
+Reason:
+  MPFR is a build-time dependency of GDB (via VandalBinUtils), providing
+  arbitrary-precision floating-point arithmetic used by GDB's expression
+  evaluator. This baseline matches the version pinned for the VandalSDK
+  toolchain build.
+
+This repository was forked directly from the upstream MPFR git repository
+at the tag above; full upstream history is preserved, and the upstream
+remote is retained locally as `mpfr-upstream` so later releases can be
+pulled with a normal `git fetch mpfr-upstream <tag>`.
